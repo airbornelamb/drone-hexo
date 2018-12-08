@@ -8,4 +8,4 @@ RUN set -xe \
     #&& apk add --no-cache bash git openssh yarn \
     #&& git --version && bash --version && ssh -V && npm -v && node -v && yarn -v
 
-ENTRYPOINT /bin/script.sh
+ENTRYPOINT ["hexo", "generate"]
