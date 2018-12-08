@@ -5,4 +5,4 @@ RUN set -xe \
     #&& apk add --no-cache bash git openssh yarn \
     #&& git --version && bash --version && ssh -V && npm -v && node -v && yarn -v
 
-ENTRYPOINT ["hexo", "generate"]
+ENTRYPOINT ["hexo", "generate", "--bail"]
